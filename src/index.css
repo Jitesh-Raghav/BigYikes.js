@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Sanso";
+  src: local("Sanso"), url('./assets/OpenSans-Regular.ttf') format('truetype');
+}
