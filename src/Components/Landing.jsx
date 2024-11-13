@@ -6,10 +6,26 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import GrainIcon from '@mui/icons-material/Grain';
 import DarkModeIcon from '@mui/icons-material/ModeNight'; // Dark Mode Icon import
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const Landing = () => {
+    const words = [
+        {
+          text: "Generate",
+        },
+        {
+          text: "Rots ",
+        },
+        {
+          text: "With ",
+        },
+        {
+          text: "BigYikes!",
+          className: "text-blue-600 dark:text-blue-600",
+        }, 
+      ];
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen bg-gray-100 w-full">
       {/* Sidebar */}
       <aside className="w-24 hidden lg:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center relative">
         {/* <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2> */}
@@ -27,14 +43,25 @@ const Landing = () => {
         {/* Dark Mode Icon at the Bottom */}
         <DarkModeIcon
           sx={{ fontSize: 38 }}
-          className="absolute bottom-4 border-1 border-gray-600 hover:text-blue-500 rounded-full p-2 cursor-pointer hover:bg-gray-200 transition-colors"
+          className="absolute bottom-4 border-1 border-gray-600 hover:text-blue-500 rounded-full ml-1 p-2 cursor-pointer hover:bg-gray-200 transition-colors"
         />
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 p-10">
-        <h1 className="text-3xl font-bold text-gray-800 font-Sanso">Welcome to the Landing Page</h1>
-        <p className="mt-4 text-gray-600 font-Sanso">This is where your main content will go.</p>
+      <main className="flex p-10 gap-3 w-full">
+        {/* <h1 className="text-3xl font-bold text-gray-800 font-Sanso">Welcome to the Landing Page</h1>
+        <p className="mt-4 text-gray-600 font-Sanso">This is where your main content will go.</p> */}
+        <div className='h-96 w-1/2 bg-pink-100 rounded-xl'> 
+            
+        </div>
+        <div className='h-22rem w-1/2 bg-pink-300 rounded-xl'>
+        <div className='p-2 flex gap-3'>
+        <video src="/Example1.mp4"  muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
+        <video src="/Example.mp4"  muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
+        </div>
+        {/* <p className='p-3 text-3xl font-Sanso text-white text-center font-extrabold'>CREATE YOUR ROTS WITH STORIES</p> */}
+        <TypewriterEffectSmooth words={words} className="text-center ml-2"/>
+        </div>
       </main>
     </div>
   );
