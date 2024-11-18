@@ -7,6 +7,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import GrainIcon from '@mui/icons-material/Grain';
 import DarkModeIcon from '@mui/icons-material/ModeNight'; // Dark Mode Icon import
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
     const words = [
@@ -24,6 +25,8 @@ const Landing = () => {
           className: "text-blue-600 dark:text-blue-600",
         }, 
       ];
+
+      const navigate= useNavigate();
   return (
     <div className="flex min-h-screen bg-gray-100 w-full">
       {/* Sidebar */}
@@ -48,14 +51,16 @@ const Landing = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex p-10 gap-3 w-full">
+      <main className="flex p-4 gap-3 w-full">
         {/* <h1 className="text-3xl font-bold text-gray-800 font-Sanso">Welcome to the Landing Page</h1>
         <p className="mt-4 text-gray-600 font-Sanso">This is where your main content will go.</p> */}
-        <div className='h-96 w-1/2 bg-pink-100 rounded-xl'> 
-            
+        <div className='h-[450px] w-1/2 bg-pink-100 rounded-xl'> 
+            <p className='text-8xl font-Sanso p-10 font-bold text-gray-800'>Big Yikes </p>
+            <p className='mt-3 px-10 font-medium font-Sanso text-gray-800 text-xl'> Big Yikes is an open-source tool that lets you generate <br /> stunning AI short form content for your social media <br /> platforms, reach a wider audience and grow. </p>
+            <button onClick={()=>{navigate("/start")}} className='py-5 px-8 text-2xl bg-pink-500 rounded-full mt-8 ml-10 text-white font-Sanso hover:bg-pink-600'>Get started</button> 
         </div>
         <div className='h-22rem w-1/2 bg-pink-300 rounded-xl'>
-        <div className='p-2 flex gap-3'>
+        <div className='p-5 flex gap-3'>
         <video src="/Example1.mp4"  muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
         <video src="/Example.mp4"  muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
         </div>
