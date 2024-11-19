@@ -8,6 +8,7 @@ import GrainIcon from '@mui/icons-material/Grain';
 import DarkModeIcon from '@mui/icons-material/ModeNight'; // Dark Mode Icon import
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { useNavigate } from 'react-router-dom';
+import { Carousel, Card } from "./ui/apple-cards-carousel";
 
 const Landing = () => {
     const words = [
@@ -27,10 +28,11 @@ const Landing = () => {
       ];
 
       const navigate= useNavigate();
+
   return (
     <div className="flex min-h-screen bg-gray-100 w-full">
       {/* Sidebar */}
-      <aside className="w-24 hidden lg:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center relative">
+      <aside className="w-24 hidden lg:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center sticky left-0 top-0">
         {/* <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2> */}
        
        <img src="/icoon.png" alt="" className='size-18'/>
@@ -54,13 +56,30 @@ const Landing = () => {
       <main className="flex p-4 gap-3 w-full">
         {/* <h1 className="text-3xl font-bold text-gray-800 font-Sanso">Welcome to the Landing Page</h1>
         <p className="mt-4 text-gray-600 font-Sanso">This is where your main content will go.</p> */}
-        <div className='h-[450px] w-1/2 bg-pink-100 rounded-xl'> 
-            <p className='text-8xl font-Sanso p-10 font-bold text-gray-800'>Big Yikes </p>
+        
+        <div className='flex flex-col w-full gap-4 p-4'>
+        <div className='h-[400px] bg-pink-100 rounded-xl '> 
+            <p className='text-8xl font-Sanso p-10 font-extrabold text-gray-800'>Big Yikes </p>
             <p className='mt-3 px-10 font-medium font-Sanso text-gray-800 text-xl'> Big Yikes is an open-source tool that lets you generate <br /> stunning AI short form content for your social media <br /> platforms, reach a wider audience and grow. </p>
             <button onClick={()=>{navigate("/start")}} className='py-5 px-8 text-2xl bg-pink-500 rounded-full mt-8 ml-10 text-white font-Sanso hover:bg-pink-600'>Get started</button> 
         </div>
+        <div className='h-[270px] bg-pink-100 rounded-xl'> 
+            
+            <div className='flex p-10 gap-3 mt-3 flex-wrap'>
+            <img src="/mine.webp" alt="Templates" className='w-36 h-40 rounded-xl cursor-pointer hover:border-2 hover:border-pink-400'/>
+            {/* <img src="/car.jpg" alt="Characters" className='w-36 h-40' /> */}
+            <img src="/musk.webp" alt="Themes"  className='w-36 h-40 rounded-xl cursor-pointer hover:border-2 hover:border-pink-400'/>
+            <img src="/surfer.jpg" alt="Themes" className='w-36 h-40 rounded-xl cursor-pointer hover:border-2 hover:border-pink-400' />
+            <img src="/trump.jpg" alt="Themes" className='w-36 h-40 rounded-xl cursor-pointer hover:border-2 hover:border-pink-400' />
+            </div>
+             <p className='-mt-6 px-10 font-medium font-Sanso text-gray-800 text-xl'>Choose from variety of templates, characters and voices.</p>
+            
+        </div>
+        </div>
+       
+
         <div className='h-22rem w-1/2 bg-pink-300 rounded-xl'>
-        <div className='p-5 flex gap-3'>
+        <div className='p-1 flex gap-1 w-full'>
         <video src="/Example1.mp4"  muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
         <video src="/Example.mp4"  muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
         </div>
