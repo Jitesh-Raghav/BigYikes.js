@@ -33,19 +33,20 @@ const PageTwo = () => {
               <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>Select from Trump, John Cena, Elon Musk, Hitler etc.</p>
             </div>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
-              <img src="/hitler.jpg" alt="SatisfyingVideos" className='h-52 w-full rounded-3xl object-cover'/>
+              <img src="/hitler.jpg" alt="SatisfyingVideos" className='h-52 w-full rounded-3xl object-cover object-left-top'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Historical figures</p>
               <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>Select from Hitler, Albert Einstien, Mahatma Gandhi, Sidhu Moosewala, etc.</p>
             </div>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
             <img src="/bob.avif" alt="customizedAnimatedTemplateSoraAI" className='h-52 w-full rounded-3xl object-cover'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Cartoon Characters (Pro)</p>
-              <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>From Spongebob, Mickey House, Ben 10, Goku, Shinchan etc.</p>
+              <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>From Spongebob, Mickey House, Ben 10, Simpsons, Shinchan etc.</p>
             </div>
        </div>
 
        <p className='ml-48 text-3xl font-Sanso pt-14 text-gray-800'>Connect your Socials</p>
-       <div className='flex gap-3 p-4 justify-around ml-44 mr-28 pb-32'>
+       <div className='pb-20'>
+       <div className='flex gap-3 p-4 justify-around ml-44 mr-28 pb-32 border-b border-double border-gray-300'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/in.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Instagram</p>
@@ -62,6 +63,13 @@ const PageTwo = () => {
               <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>Connect your X account and tweet your brainRot.</p>
             </div>
        </div>
+       <div className='flex justify-around mx-20 ml-40 mt-20'>
+          <div className='h-96 w-96 bg-purple-200 '><p>bigyikes-contribute</p></div>
+          <div className='h-96 w-60 bg-purple-200 '><p>socials, give star</p></div>
+          <div className='h-96 w-60 bg-purple-200 '><p>having issues, report abuse, Buy me a coffee</p></div>
+       </div>
+       </div>
+    
 
     </div>
     
