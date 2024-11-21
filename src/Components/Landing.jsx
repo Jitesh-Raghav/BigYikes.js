@@ -82,11 +82,11 @@ const Landing = () => {
 
                 <div className='h-22rem w-1/2 bg-pink-300 rounded-xl'>
                     <div className='p-4 flex gap-3 w-full'>
-                        <video src="/Example1.mp4" muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
-                        <video src="/Example.mp4" muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
+                        <video src="/Example1.mp4" muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl cursor-pointer" />
+                        <video src="/Example.mp4" muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl cursor-pointer" />
                     </div>
                     {/* <p className='p-3 text-3xl font-Sanso text-white text-center font-extrabold'>CREATE YOUR ROTS WITH STORIES</p> */}
-                    <TypewriterEffectSmooth words={words} className="text-center ml-2 top-0" />
+                    <TypewriterEffectSmooth words={words} className="text-center ml-4 top-0" />
                     {/* <p className='text-center ml-2 top-0'>Generate Rots with <span className='text-pink-700'>BikeYikes.js</span></p> */}
                 </div>
             </main>

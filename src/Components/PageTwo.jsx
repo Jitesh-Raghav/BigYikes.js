@@ -1,6 +1,5 @@
 import React from 'react'
-import XIcon from '@mui/icons-material/X';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { TextHoverEffect } from "./ui/text-hover-effect";
 
 const PageTwo = () => {
   return (
@@ -68,9 +67,12 @@ const PageTwo = () => {
        {/* <div className='w-[80%] rounded-3xl ml-44 mr-80 pt-4 mt-10'>
           <p className='text-4xl font-Sanso px-4 text-gray-700 font-semibold'>Join the waitlist</p>
         </div> */}
-       <div className='flex justify-around mx-20 ml-40 mt-20 bg-pink-100 rounded-3xl'>
+        <div className="h-[23rem] ml-16 flex items-center justify-center">
+      <TextHoverEffect text="BIGYIKES" />
+        </div>
+       <div className='flex justify-around mx-20 ml-40 mt-10 bg-pink-100 rounded-3xl'>
           <div className='h-96 w-1/2 rounded-3xl'>
-            <img className='w-20 m-6 cursor-pointer' src="/icoon.png" alt="" />
+            <img className='w-20 m-4 cursor-pointer' src="/icoon.png" alt="" />
             <p className='px-8 pt-4 font-Sanso text-gray-700 text-md mr-14'>Big Yikes is an adaptable, open-source tool designed to generate stunning AI-driven short-form content for social media platforms. By streamlining content creation, it helps you reach a wider audience, enhance engagement, and drive growth effortlessly.</p>
             <p className='font-semibold px-8 pt-4 font-Sanso text-gray-600 underline decoration-gray-400'>Building in public at <span className='cursor-pointer text-pink-400'>@okayjitesh</span></p>
             </div>
