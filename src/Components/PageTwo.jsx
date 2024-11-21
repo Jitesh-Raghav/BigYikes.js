@@ -61,11 +61,11 @@ const PageTwo = () => {
       </p>
     </div>
     <img
-      src="/s.jpeg"
+      src="/about.jpg"
       width="500"
       height="500"
       alt="Big Yikes demo image"
-      className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+      className="absolute -right-2 lg:-right-[20%] grayscale filter -bottom-4 object-contain rounded-2xl"
     />
   </WobbleCard>
 

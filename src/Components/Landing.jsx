@@ -34,7 +34,7 @@ const Landing = () => {
        
         <div className="flex min-h-screen bg-gray-100 w-full">
             {/* Sidebar */}
-            <aside className="w-24 hidden lg:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center fixed left-0 top-0">
+            <aside className="lg:w-24 hidden sm:w-12 lg:block sm:block md:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center fixed left-0 top-0">
                 {/* <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2> */}
 
                 <img src="/icoon.png" alt="" className='size-18 cursor-pointer' />
