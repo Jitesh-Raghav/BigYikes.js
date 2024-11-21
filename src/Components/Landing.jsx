@@ -23,7 +23,7 @@ const Landing = () => {
         },
         {
             text: "BigYikes!",
-            className: "text-blue-600 dark:text-blue-600",
+            className: "text-pink-700 dark:text-pink-700",
         },
     ];
 
@@ -59,7 +59,7 @@ const Landing = () => {
                 {/* <h1 className="text-3xl font-bold text-gray-800 font-Sanso">Welcome to the Landing Page</h1>
         <p className="mt-4 text-gray-600 font-Sanso">This is where your main content will go.</p> */}
 
-                <div className='flex flex-col w-full gap-4 p-0'>
+                <div className='flex flex-col w-1/2 gap-4 p-0'>
                     <div className='h-[400px] bg-pink-100 rounded-xl '>
                         <p className='text-8xl font-Sanso p-10 font-extrabold text-gray-800'>Big Yikes </p>
                         <p className='mt-3 px-10 font-medium font-Sanso text-gray-800 text-xl'> Big Yikes is an open-source tool that lets you generate <br /> stunning AI short form content for your social media <br /> platforms, reach a wider audience and grow. </p>
@@ -67,7 +67,7 @@ const Landing = () => {
                     </div>
                     <div className='h-[290px] bg-pink-100 rounded-xl'>
 
-                        <div className='flex p-10 gap-3 mt-3 flex-wrap'>
+                        <div className='flex p-8 gap-2 mt-3 flex-wrap'>
                             <img src="/mine.webp" alt="Templates" className='w-36 h-40 rounded-xl cursor-pointer hover:border-2 hover:border-pink-400' />
                             {/* <img src="/car.jpg" alt="Characters" className='w-36 h-40' /> */}
                             <img src="/musk.webp" alt="Themes" className='w-36 h-40 rounded-xl cursor-pointer hover:border-2 hover:border-pink-400' />
@@ -81,12 +81,13 @@ const Landing = () => {
 
 
                 <div className='h-22rem w-1/2 bg-pink-300 rounded-xl'>
-                    <div className='p-1 flex gap-1 w-full'>
+                    <div className='p-4 flex gap-3 w-full'>
                         <video src="/Example1.mp4" muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
                         <video src="/Example.mp4" muted loop autoPlay className="h-22rem w-80 object-contain rounded-xl" />
                     </div>
                     {/* <p className='p-3 text-3xl font-Sanso text-white text-center font-extrabold'>CREATE YOUR ROTS WITH STORIES</p> */}
                     <TypewriterEffectSmooth words={words} className="text-center ml-2 top-0" />
+                    {/* <p className='text-center ml-2 top-0'>Generate Rots with <span className='text-pink-700'>BikeYikes.js</span></p> */}
                 </div>
             </main>
             

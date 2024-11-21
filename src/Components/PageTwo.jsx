@@ -8,7 +8,7 @@ const PageTwo = () => {
     <div className=' bg-gray-100 w-full h-full'>
 
         
-   <p className='ml-48 text-3xl font-Sanso pt-20 text-gray-800'>Choose from a variety of video Templates</p>
+   <p className='ml-48 text-2xl font-Sanso pt-20 text-gray-800'>Variety of Video Templates</p>
        <div className='flex gap-3 p-4 justify-around ml-44 mr-28'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/minec.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
@@ -27,7 +27,7 @@ const PageTwo = () => {
             </div>
        </div>
 
-       <p className='ml-48 text-3xl font-Sanso pt-14 text-gray-800'>Choose from a variety of Characters</p>
+       <p className='ml-48 text-2xl font-Sanso pt-14 text-gray-800'>Variety of Characters</p>
        <div className='flex gap-3 p-4 justify-around ml-44 mr-28'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/trump.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
@@ -46,7 +46,7 @@ const PageTwo = () => {
             </div>
        </div>
 
-       <p className='ml-48 text-3xl font-Sanso pt-14 text-gray-800'>Connect your Socials</p>
+       <p className='ml-48 text-2xl font-Sanso pt-14 text-gray-800'>Connect your Socials</p>
        <div className='pb-20'>
        <div className='flex gap-3 p-4 justify-around ml-44 mr-28 pb-32 border-b border-gray-300'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
@@ -65,7 +65,10 @@ const PageTwo = () => {
               <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>Connect your X account and tweet your brainRot.</p>
             </div>
        </div>
-       <div className='flex justify-around mx-20 ml-40 mt-20 bg-pink-100'>
+       {/* <div className='w-[80%] rounded-3xl ml-44 mr-80 pt-4 mt-10'>
+          <p className='text-4xl font-Sanso px-4 text-gray-700 font-semibold'>Join the waitlist</p>
+        </div> */}
+       <div className='flex justify-around mx-20 ml-40 mt-20 bg-pink-100 rounded-3xl'>
           <div className='h-96 w-1/2 rounded-3xl'>
             <img className='w-20 m-6 cursor-pointer' src="/icoon.png" alt="" />
             <p className='px-8 pt-4 font-Sanso text-gray-700 text-md mr-14'>Big Yikes is an adaptable, open-source tool designed to generate stunning AI-driven short-form content for social media platforms. By streamlining content creation, it helps you reach a wider audience, enhance engagement, and drive growth effortlessly.</p>
@@ -88,7 +91,7 @@ const PageTwo = () => {
        </div>
        </div>
     
-    <div className='pt-10 pb-4 items-center justify-between text-start border-t border-gray-300 ml-44 mr-32'>
+    <div className='pt-8 pb-8 items-center justify-between text-start border-t border-gray-300 ml-44 mr-32'>
       <p className='text-gray-700 font-Sanso ml-10'>Copyright © 2024 BigYikes.js LLC. All Rights Reserved.</p>
     </div>
 
