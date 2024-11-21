@@ -88,11 +88,11 @@ const PageTwo = () => {
       </p>
     </div>
     <img
-      src="/linear.webp"
-      width={500}
-      height={500}
+      src="/an.jpg"
+      width="500"
+      height="500"
       alt="Big Yikes demo image"
-      className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+      className="absolute -right-2 lg:-right-[10%] grayscale filter -bottom-4 object-contain rounded-2xl"
     />
   </WobbleCard>
 </div>
