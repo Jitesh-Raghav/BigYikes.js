@@ -9,7 +9,7 @@ const PageTwo = () => {
 
         
    <p className='ml-48 text-2xl font-Sanso pt-20 text-gray-800'>Variety of Video Templates</p>
-       <div className='flex gap-3 p-4 justify-around ml-44 mr-28'>
+       <div className='flex gap-3 pb-4 justify-around ml-44 mr-28'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/minec.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Gaming Templates</p>
@@ -28,7 +28,7 @@ const PageTwo = () => {
        </div>
 
        <p className='ml-48 text-2xl font-Sanso pt-14 text-gray-800'>Variety of Characters</p>
-       <div className='flex gap-3 p-4 justify-around ml-44 mr-28'>
+       <div className='flex gap-3 pb-4 justify-around ml-44 mr-28'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/trump.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Real Life</p>
@@ -121,8 +121,8 @@ const PageTwo = () => {
        {/* <div className='w-[80%] rounded-3xl ml-44 mr-80 pt-4 mt-10'>
           <p className='text-4xl font-Sanso px-4 text-gray-700 font-semibold'>Join the waitlist</p>
         </div> */}
-        <div className="h-[23rem] mt-4 ml-16 flex items-center justify-center">
-      <TextHoverEffect text="BIGYIKES" />
+        <div className="h-[23rem] mt-4 ml-44 mr-28 flex items-center justify-center">
+      <TextHoverEffect text="BIGYIKES"/>
         </div>
        <div className='flex justify-around mx-20 ml-40 mt-6 bg-pink-100 rounded-3xl'>
           <div className='h-96 w-1/2 rounded-3xl'>
