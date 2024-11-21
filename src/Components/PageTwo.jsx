@@ -1,5 +1,6 @@
 import React from 'react'
 import { TextHoverEffect } from "./ui/text-hover-effect";
+import { WobbleCard } from "./ui/wobble-card";
 
 const PageTwo = () => {
   return (
@@ -31,7 +32,7 @@ const PageTwo = () => {
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/trump.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Real Life</p>
-              <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>Select from Trump, John Cena, Elon Musk, Hitler etc.</p>
+              <p className='text-gray-700 font-Sanso pt-2 px-2 mr-10'>Select from Trump, John Cena, Elon Musk, Walter White etc.</p>
             </div>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/hitler.jpg" alt="SatisfyingVideos" className='h-52 w-full rounded-3xl object-cover object-left-top'/>
@@ -45,7 +46,60 @@ const PageTwo = () => {
             </div>
        </div>
 
-       <p className='ml-48 text-2xl font-Sanso pt-14 text-gray-800'>Connect your Socials</p>
+       <p className='ml-40 pb-3 pt-10 text-gray-700 font-Sanso text-2xl font-semibold'>What we offer</p>
+       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 max-w-7xl mx-auto w-full">
+  <WobbleCard
+    containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px] ml-10"
+    className=""
+  >
+    <div className="max-w-xs">
+      <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        Big Yikes revolutionizes content creation
+      </h2>
+      <p className="mt-4 text-left text-base/6 text-neutral-200">
+        Design stunning AI-powered short videos effortlessly. Choose templates, customize characters, and craft your story.
+      </p>
+    </div>
+    <img
+      src="/s.jpeg"
+      width="500"
+      height="500"
+      alt="Big Yikes demo image"
+      className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+    />
+  </WobbleCard>
+
+  <WobbleCard containerClassName="col-span-1 min-h-[300px] ml-10">
+    <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+      Voices that make your story stand out
+    </h2>
+    <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+      Whether it's Elon Musk, Walter White, or your favorite characters, bring your story to life with our customizable AI-generated voices.
+    </p>
+  </WobbleCard>
+
+  <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] ml-10">
+    <div className="max-w-sm">
+      <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        Start creating with Big Yikes today!
+      </h2>
+      <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+        Generate stunning, personalized short videos in minutes. Tap into Big Yikes for templates, voices, and storytelling that resonate with your audience.
+      </p>
+    </div>
+    <img
+      src="/linear.webp"
+      width={500}
+      height={500}
+      alt="Big Yikes demo image"
+      className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+    />
+  </WobbleCard>
+</div>
+
+
+
+       <p className='ml-48 text-2xl font-Sanso pt-20 text-gray-800'>Connect your Socials</p>
        <div className='pb-20'>
        <div className='flex gap-3 p-4 justify-around ml-44 mr-28 pb-32 border-b border-gray-300'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
@@ -67,10 +121,10 @@ const PageTwo = () => {
        {/* <div className='w-[80%] rounded-3xl ml-44 mr-80 pt-4 mt-10'>
           <p className='text-4xl font-Sanso px-4 text-gray-700 font-semibold'>Join the waitlist</p>
         </div> */}
-        <div className="h-[23rem] ml-16 flex items-center justify-center">
+        <div className="h-[23rem] mt-4 ml-16 flex items-center justify-center">
       <TextHoverEffect text="BIGYIKES" />
         </div>
-       <div className='flex justify-around mx-20 ml-40 mt-10 bg-pink-100 rounded-3xl'>
+       <div className='flex justify-around mx-20 ml-40 mt-6 bg-pink-100 rounded-3xl'>
           <div className='h-96 w-1/2 rounded-3xl'>
             <img className='w-20 m-4 cursor-pointer' src="/icoon.png" alt="" />
             <p className='px-8 pt-4 font-Sanso text-gray-700 text-md mr-14'>Big Yikes is an adaptable, open-source tool designed to generate stunning AI-driven short-form content for social media platforms. By streamlining content creation, it helps you reach a wider audience, enhance engagement, and drive growth effortlessly.</p>
