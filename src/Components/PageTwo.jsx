@@ -46,7 +46,7 @@ const PageTwo = () => {
             </div>
        </div>
 
-       <p className='ml-40 pb-3 pt-10 text-gray-700 font-Sanso text-2xl font-semibold'>What we offer</p>
+       <p className='ml-44 pb-3 pt-14 text-gray-700 font-Sanso text-2xl font-semibold'>All the Bells and Whistles</p>
        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 max-w-7xl mx-auto w-full">
   <WobbleCard
     containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px] ml-10"
