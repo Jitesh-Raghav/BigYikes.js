@@ -37,7 +37,7 @@ const Landing = () => {
             <aside className="w-24 hidden lg:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center fixed left-0 top-0">
                 {/* <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2> */}
 
-                <img src="/icoon.png" alt="" className='size-18' />
+                <img src="/icoon.png" alt="" className='size-18 cursor-pointer' />
 
                 <nav className="flex flex-col items-center gap-6 flex-1 mt-8">
                     <SidebarLink icon={<HomeIcon sx={{ fontSize: 24 }} />} label="Home" />
