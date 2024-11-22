@@ -101,7 +101,7 @@ const PageTwo = () => {
 
        <p className='ml-48 text-2xl font-Sanso pt-20 text-gray-800'>Connect your Socials</p>
        <div className='pb-20'>
-       <div className='flex gap-3 p-4 justify-around ml-44 mr-28 pb-32 border-b border-gray-300'>
+       <div className='flex gap-3 justify-around ml-44 mr-28 pb-32 border-b border-gray-300'>
             <div className='w-96 h-80 bg-pink-100 flex-col mt-3 rounded-3xl hover:bg-pink-200 cursor-pointer transition-all delay-75 hover:shadow-xl'>
               <img src="/in.jpg" alt="gamingTemplates" className='h-52 w-full rounded-3xl object-cover'/>
               <p className='text-gray-700 font-Sanso font-bold text-lg pt-2 px-2'>Instagram</p>
@@ -148,7 +148,7 @@ const PageTwo = () => {
        </div>
     
     <div className='pt-8 pb-8 items-center justify-between text-start border-t border-gray-300 ml-44 mr-32'>
-      <p className='text-gray-700 font-Sanso ml-10'>Copyright © 2024 BigYikes.js LLC. All Rights Reserved.</p>
+      <p className='text-gray-700 font-Sanso ml-4'>Copyright © 2024 BigYikes.js LLC. All Rights Reserved.</p>
     </div>
 
     </div>

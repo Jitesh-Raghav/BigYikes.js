@@ -62,7 +62,7 @@ const Landing = () => {
                 <div className='flex flex-col w-1/2 gap-4 p-0'>
                     <div className='h-[400px] bg-pink-100 rounded-xl '>
                         <p className='text-8xl font-Sanso p-10 font-extrabold text-gray-800'>Big Yikes </p>
-                        <p className='mt-3 px-10 font-medium font-Sanso text-gray-800 text-xl'> Big Yikes is an open-source tool that lets you generate <br /> stunning AI short form content for your social media <br /> platforms, reach a wider audience and grow. </p>
+                        <p className='mt-3 px-10 font-medium font-Sanso text-gray-700 text-xl'> Big Yikes is an open-source tool that lets you generate <br /> stunning AI short form content for your social media <br /> platforms, farm engagement and statpad. </p>
                         <button onClick={() => { navigate("/start") }} className='py-5 px-8 text-2xl bg-pink-500 rounded-full mt-8 ml-10 text-white font-Sanso hover:bg-pink-600'>Get started</button>
                     </div>
                     <div className='h-[290px] bg-pink-100 rounded-xl'>
