@@ -26,7 +26,7 @@ const Loader = () => {
           <div className="side-top" />
         </div>
       </div>
-      <p className="loader-text">Let him cook</p>
+      {/* <p className="loader-text">Let him cook</p> */}
     </StyledWrapper>
   );
 }
