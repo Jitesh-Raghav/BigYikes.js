@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLanding from "./Components/MainLanding";
-import Start from "./Components/Start";
+import SelectTemplate from "./Components/SelectTemplate";
 import Loader from "./Components/Loader"; // Import the Loader component
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
       ) : (
         <Routes>
           <Route path="/" element={<MainLanding />} />
-          <Route path="/start" element={<Start />} />
+          <Route path="/start" element={<SelectTemplate />} />
         </Routes>
       )}
     </>
