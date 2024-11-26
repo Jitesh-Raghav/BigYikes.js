@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLanding from "./Components/MainLanding";
 import SelectTemplate from "./Components/SelectTemplate";
-import Loader from "./Components/Loader"; // Import the Loader component
+import Loader from "./Components/Loader"; 
+import GenerateStory from "./Components/GenerateStory";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainLanding />} />
           <Route path="/start" element={<SelectTemplate />} />
+          <Route path="/story" element={<GenerateStory />} />
         </Routes>
       )}
     </>
