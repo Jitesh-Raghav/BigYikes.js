@@ -8,10 +8,18 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import GrainIcon from '@mui/icons-material/Grain';
 import DarkModeIcon from '@mui/icons-material/ModeNight';
 import { useNavigate } from 'react-router-dom';
+import { FileUpload } from "./ui/file-upload";
 
 const SelectTemplate = () => {
   const [selectedVideo, setSelectedVideo] = useState("");
   const navigate = useNavigate();
+
+  const [files, setFiles] = useState([]);
+
+  const handleFileUpload = (files) => {
+    setFiles(files);
+    console.log(files);
+  };
 
   // Video Categories and Data
   const videoData = {
@@ -30,7 +38,7 @@ const SelectTemplate = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-600 flex flex-col items-center p-6">
+    <div className="min-h-screen bg-gray-100 text-gray-600 flex flex-col items-center p-6 font-Sanso">
       <aside className="lg:w-24 hidden sm:w-12 lg:block sm:block md:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center fixed left-0 top-0">
                 {/* <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2> */}
 
@@ -50,18 +58,26 @@ const SelectTemplate = () => {
                     className="absolute bottom-4 border-1 border-gray-600 hover:text-blue-500 rounded-full ml-1 p-2 cursor-pointer hover:bg-gray-200 transition-colors"
                 />
             </aside>
+
+     <div className='flex items-center justify-around w-full'>
+      <div className="mb-8 flex-col items-center justify-center ml-44">
       <p className='items-center py-2 text-gray-700 text-lg'>Click on templates to preview</p>
-      <div className="w-full max-w-4xl mb-8 flex items-center justify-center">
         <ReactPlayer
           url={selectedVideo}
           playing={true}
           controls
-          width="50%"
+          width="180%"
           height="480px"
-          className="rounded-lg border-4 border-pink-400 shadow-lg items-center justify-center flex"
+          className="rounded-lg border-2 border-pink-300 border-dotted shadow-lg items-center justify-center flex"
         />
       </div>
-
+      <p className='text-gray-500 text-xl font-Sanso ml-60'>OR</p>
+      <div className='w-1/3 h-[485px] mr-36 ml-5'>
+      <div className="w-full h-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
+      <FileUpload onChange={handleFileUpload} />
+    </div>
+      </div>
+      </div>
       {/* Categories */}
       <div className="w-[60%] flex justify-between items-start gap-4">
         {Object.entries(videoData).map(([category, videos]) => (
