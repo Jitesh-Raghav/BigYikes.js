@@ -13,16 +13,16 @@ const SelectTemplate = () => {
 
   // Video Categories and Data
   const videoData = {
-    gaming: [
+    Gaming: [
       { name: "GTA", src: "/templates/gaming/gta.mp4", thumbnail: "/thumbnails/gaming/gta.jpg" },
       { name: "Minecraft", src: "/templates/gaming/minecraft.mp4", thumbnail: "/thumbnails/gaming/minecraft.jpg" },
     ],
-    satisfying: [
+    Satisfying: [
       { name: "ASMR", src: "/templates/satisfying/asmr.mp4", thumbnail: "/thumbnails/satisfying/asmr.jpg" },
       { name: "Soap Cutting", src: "/templates/satisfying/soapcutting.mp4", thumbnail: "/thumbnails/satisfying/soapcutting.jpg" },
     ],
-    aiCustom: [
-      { name: "AI Chatbot", src: "/templates/ai-custom/aichatbot.mp4", thumbnail: "/thumbnails/ai-custom/aichatbot.jpg" },
+   AI: [
+      { name: "AI Based", src: "/templates/ai-custom/aichatbot.mp4", thumbnail: "/thumbnails/ai-custom/aichatbot.jpg" },
       { name: "Generative Art", src: "/templates/ai-custom/generative.mp4", thumbnail: "/thumbnails/ai-custom/generative.jpg" },
     ],
   };
