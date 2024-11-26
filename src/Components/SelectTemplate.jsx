@@ -7,9 +7,11 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import GrainIcon from '@mui/icons-material/Grain';
 import DarkModeIcon from '@mui/icons-material/ModeNight';
+import { useNavigate } from 'react-router-dom';
 
 const SelectTemplate = () => {
   const [selectedVideo, setSelectedVideo] = useState("");
+  const navigate = useNavigate();
 
   // Video Categories and Data
   const videoData = {
@@ -32,10 +34,10 @@ const SelectTemplate = () => {
       <aside className="lg:w-24 hidden sm:w-12 lg:block sm:block md:block bg-purple-50 h-screen p-4 shadow-md flex-col items-center fixed left-0 top-0">
                 {/* <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2> */}
 
-                <img src="/icoon.png" alt="" className='size-18 cursor-pointer' />
+                <img src="/icoon.png" alt="" className='size-18 cursor-pointer' onClick={()=>{navigate("/")}}/>
 
                 <nav className="flex flex-col items-center gap-6 flex-1 mt-8">
-                    <SidebarLink icon={<HomeIcon sx={{ fontSize: 24 }} />} label="Home" />
+                    <SidebarLink icon={<HomeIcon sx={{ fontSize: 24 }} />} label="Home" onClick={()=>{navigate("/")}}/>
                     <SidebarLink icon={<GrainIcon sx={{ fontSize: 24 }} />} label="Get Started" />
                     <SidebarLink icon={<PersonIcon sx={{ fontSize: 24 }} />} label="Profile" />
                     <SidebarLink icon={<SettingsIcon sx={{ fontSize: 24 }} />} label="Settings" />
@@ -48,7 +50,7 @@ const SelectTemplate = () => {
                     className="absolute bottom-4 border-1 border-gray-600 hover:text-blue-500 rounded-full ml-1 p-2 cursor-pointer hover:bg-gray-200 transition-colors"
                 />
             </aside>
-      {/* Video Player */}
+      <p className='items-center py-2 text-gray-700 text-lg'>Click on templates to preview</p>
       <div className="w-full max-w-4xl mb-8 flex items-center justify-center">
         <ReactPlayer
           url={selectedVideo}
@@ -91,9 +93,9 @@ const SelectTemplate = () => {
 };
 
 
-const SidebarLink = ({ icon, label }) => {
+const SidebarLink = ({ icon, label, onClick }) => {
   return (
-      <div className="flex flex-col items-center gap-1 text-center p-2 hover:bg-purple-100 rounded-xl text-gray-600 hover:text-blue-500 transition-colors cursor-pointer">
+      <div onClick={onClick} className="flex flex-col items-center gap-1 text-center p-2 hover:bg-purple-100 rounded-xl text-gray-600 hover:text-blue-500 transition-colors cursor-pointer">
           {/* Icon */}
           <span className="text-gray-700 hover:text-blue-500">{icon}</span>
 
