@@ -3,6 +3,8 @@
 import { cn } from "../../Utils/Utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 export const TypewriterEffect = ({
   words,

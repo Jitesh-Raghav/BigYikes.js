@@ -2,3 +2,4 @@
 2. Add voice models, obama, modi, trump, spongebob, john cena, walter white, saul goodman etc...
 3. Upper half animation of what character is saying, lower half gameplay..
 4. Add loader for page, show it till the app loads, 
+5. Add background audio feature.
