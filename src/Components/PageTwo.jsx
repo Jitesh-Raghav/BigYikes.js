@@ -132,19 +132,19 @@ const PageTwo = () => {
             </div>
           <div className='h-96 w-60  flex-col rounded-3xl'>
             <p className='mt-10 px-8 py-3 text-gray-700 text-lg font-Sanso font-semibold'>Socials</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Twitter</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Github</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Instagram</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>LinkedIn</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Blog</p>
+            <p className='px-8 pt-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Twitter</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Github</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Instagram</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>LinkedIn</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Blog</p>
             </div>
             <div className='h-96 w-60  flex-col rounded-3xl'>
             <p className='mt-10 px-8 py-3 text-gray-700 text-lg font-Sanso font-semibold'>Quick Links</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Docs</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Pages</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Integration</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Testimonials</p>
-            <p className='px-8 py-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Contact</p>
+            <p className='px-8 pt-3 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Docs</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Pages</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Integration</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Testimonials</p>
+            <p className='px-8 py-1 text-gray-800 font-Sanso hover:underline hover:decoration-gray-500 cursor-pointer'>Contact</p>
             </div>
           <div className='h-96 w-60 b flex-col rounded-3xl'>
           <p className='pt-14 px-8 pb-4 text-md font-semibold text-gray-600 decoration-gray-500 hover:underline cursor-pointer font-Sanso'>Contribute</p>
