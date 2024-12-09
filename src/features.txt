@@ -4,3 +4,4 @@
 4. Add loader for page, show it till the app loads, 
 5. Add background audio feature.
 6. See how sites like fakeyou.com, work
+7. Add post scheduling feature also, like post at 10pm on 1jan2025.
