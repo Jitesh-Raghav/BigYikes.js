@@ -42,9 +42,9 @@ const Landing = () => {
                 <nav className="flex flex-col items-center gap-6 flex-1 mt-8">
                     <SidebarLink icon={<HomeIcon sx={{ fontSize: 24 }} />} label="Home" onClick={()=>{navigate("/")}}/>
                     <SidebarLink icon={<GrainIcon sx={{ fontSize: 24 }} />} label="Get Started" onClick={()=>{navigate("/start")}}/>
-                    <SidebarLink icon={<PersonIcon sx={{ fontSize: 24 }} />} label="Profile" />
-                    <SidebarLink icon={<SettingsIcon sx={{ fontSize: 24 }} />} label="Settings" />
-                    <SidebarLink icon={<LogoutIcon sx={{ fontSize: 24 }} />} label="Sign Up" />
+                    <SidebarLink icon={<PersonIcon sx={{ fontSize: 24 }} />} label="Profile" onClick={()=>{navigate("/profile")}}/>
+                    <SidebarLink icon={<SettingsIcon sx={{ fontSize: 24 }} />} label="Settings" onClick={()=>{navigate("/settings")}}/>
+                    <SidebarLink icon={<LogoutIcon sx={{ fontSize: 24 }} />} label="Sign Up"/>
                 </nav>
 
                 {/* Dark Mode Icon at the Bottom */}
