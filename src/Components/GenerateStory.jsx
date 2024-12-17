@@ -37,7 +37,7 @@ const GenerateStory = () => {
           Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: "text-davinci-003", // or "gpt-4"
+          model: "text-davinci-003", 
           prompt: `Write a short story based on this prompt: "${prompt}". The story must fit a 1-minute video template (~150 words). Provide 3 different story options.`,
           max_tokens: 400,
         }),
@@ -82,14 +82,14 @@ const GenerateStory = () => {
     setSelectedStory(story);
     setIsProcessing(true);
 
-    // Generate WebVTT captions
+    
     const vttCaptions = generateWebVTT(story);
     setCaptions(vttCaptions);
 
-    // Simulate processing with a loader
+    
     setTimeout(() => {
       setIsProcessing(false);
-      setVideoWithCaptions(selectedVideo); // Keeping the same video for simplicity
+      setVideoWithCaptions(selectedVideo); 
       alert("Captions added successfully!");
     }, 3000);
   };
@@ -127,13 +127,13 @@ const GenerateStory = () => {
                     <SidebarLink icon={<LogoutIcon sx={{ fontSize: 24 }} />} label="Sign Up" />
                 </nav>
 
-                {/* Dark Mode Icon at the Bottom */}
+                
                 <DarkModeIcon
                     sx={{ fontSize: 38 }}
                     className="absolute bottom-4 border-1 border-gray-600 hover:text-blue-500 rounded-full ml-1 p-2 cursor-pointer hover:bg-gray-200 transition-colors"
                 />
             </aside>
-      {/* Video Player Section */}
+     
       <div className="flex w-full max-w-6xl mb-6 gap-6">
         {/* Original Video Player */}
         <div className="flex-1">
@@ -148,7 +148,7 @@ const GenerateStory = () => {
           />
         </div>
 
-        {/* Video with Captions Player */}
+        
         <div className="flex-1">
           <h3 className="text-lg text-center mb-2">Video with Captions</h3>
           <ReactPlayer
@@ -171,7 +171,7 @@ const GenerateStory = () => {
         </div>
       </div>
 
-      {/* Prompt Input */}
+      
       <div className="w-full max-w-lg mb-6">
         <input
           type="text"
@@ -188,7 +188,6 @@ const GenerateStory = () => {
         </button>
       </div>
 
-      {/* Generated Stories */}
       {generatedStories.length > 0 && (
         <div className="w-full max-w-3xl">
           <h2 className="text-xl font-semibold mb-4">Generated Stories</h2>
@@ -211,14 +210,14 @@ const GenerateStory = () => {
         </div>
       )}
 
-      {/* Processing Loader */}
+     
       {isProcessing && (
         <div className="w-full max-w-lg mt-6 text-center">
           <p className="text-lg text-gray-700">Processing video...</p>
         </div>
       )}
 
-      {/* Navigate to Voice */}
+   
       {!isProcessing && videoWithCaptions && (
         <button
           onClick={handleNavigateToVoice}
@@ -234,10 +233,10 @@ const GenerateStory = () => {
 const SidebarLink = ({ icon, label, onClick }) => {
     return (
         <div onClick={onClick} className="flex flex-col items-center gap-1 text-center p-2 hover:bg-purple-100 rounded-xl text-gray-600 hover:text-blue-500 transition-colors cursor-pointer">
-            {/* Icon */}
+         
             <span className="text-gray-700 hover:text-blue-500">{icon}</span>
 
-            {/* Label Below Icon */}
+            
             <span className="text-xs font-medium font-Sanso">{label}</span>
         </div>
     );

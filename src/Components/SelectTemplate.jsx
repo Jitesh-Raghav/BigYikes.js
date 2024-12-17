@@ -29,7 +29,7 @@ const SelectTemplate = () => {
     navigate("/story");
   };
 
-  // Video Categories and Data
+ 
   const videoData = {
     Gaming: [
       { name: "GTA", src: "/templates/gaming/gta.mp4", thumbnail: "/thumbnails/gaming/gta.jpg" },
