@@ -44,7 +44,7 @@ const Landing = () => {
                     <SidebarLink icon={<GrainIcon sx={{ fontSize: 24 }} />} label="Get Started" onClick={()=>{navigate("/start")}}/>
                     <SidebarLink icon={<PersonIcon sx={{ fontSize: 24 }} />} label="Profile" onClick={()=>{navigate("/profile")}}/>
                     <SidebarLink icon={<SettingsIcon sx={{ fontSize: 24 }} />} label="Settings" onClick={()=>{navigate("/settings")}}/>
-                    <SidebarLink icon={<LogoutIcon sx={{ fontSize: 24 }} />} label="Sign Up"/>
+                    <SidebarLink icon={<LogoutIcon sx={{ fontSize: 24 }} />} label="Sign Up" onClick={()=>{navigate("/sign-up")}}/>
                 </nav>
 
                 {/* Dark Mode Icon at the Bottom */}
